@@ -14,7 +14,7 @@ Feature: Login
   @negative
   Scenario: Verify warning message for invalid credentials
     Then user logs in with "wrong" username and "wrong" password
-    And user verifies that "Invalid user name or password." warning message is displayed
+    And user verifies that "Invalid user name or password" warning message is displayed
 
   @driver
   Scenario: Login as a driver

@@ -12,9 +12,7 @@ import org.junit.runner.RunWith;
                 "html:target/default-cucumber-reports",
                 "rerun:target/rerun.txt"
         },
-        tags = {"@negative or @storemanager"},
-        features = {
-                "src/test/resources/features" //to specify where are the features
+        features = {"@target/rerun.txt" //to specify where is txt file with failed features
         },
         //feature contains scenarios
         //every scenario is like a test
@@ -25,5 +23,5 @@ import org.junit.runner.RunWith;
         dryRun = false
 
 )
-public class CukesRunner {
+public class FailedRunner {
 }
