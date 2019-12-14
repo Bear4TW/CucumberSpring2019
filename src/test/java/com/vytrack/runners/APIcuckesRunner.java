@@ -12,18 +12,14 @@ import org.junit.runner.RunWith;
                 "html:target/default-cucumber-reports",
                 "rerun:target/rerun.txt"
         },
-        tags = {"@login_1"},
+        tags = {"@ApiPost"},
         features = {
-                "src/test/resources/features" //to specify where are the features
+                "src/test/resources/features"
         },
-        //feature contains scenarios
-        //every scenario is like a test
-        //where is the implementation for features
         glue = {"com/vytrack/step_definitions"},
-        //dry tun - to generate step definitions automatically
-        //you will see them in the console output
+
         dryRun = false
 
 )
-public class CukesRunner {
+public class APIcuckesRunner {
 }

@@ -11,6 +11,8 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
+import java.util.ArrayList;
+
 public class Driver {
     private static WebDriver driver;
 
@@ -72,6 +74,8 @@ public class Driver {
     public static WebDriver getDriver() {
 
         return getDriver(null);
+
+
     }
 
     public  static void closeDriver() {
